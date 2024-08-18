@@ -1,0 +1,59 @@
+.calculator {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: #eaf6ff; /* azul claro para fundo */
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.display {
+    margin-bottom: 20px;
+    background-color: #ffffff; /* branco para o display */
+    color: #333333; /* preto suave para o texto */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: right;
+    font-size: 2rem;
+    box-shadow: inset 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #ffffff; /* branco */
+    background-color: #6ec1e4; /* azul claro para os botões */
+    box-shadow: 0px 8px #5a9db5; /* sombra mais escura para dar profundidade */
+    transition: all 0.2s ease-in-out;
+}
+
+button:active {
+    box-shadow: 0px 4px #5a9db5; /* diminui a sombra quando pressionado */
+    transform: translateY(4px); /* empurrar botão para baixo */
+}
+
+button:hover {
+    background-color: #5a9db5; /* azul um pouco mais escuro no hover */
+    box-shadow: 0px 10px #4a8197; /* sombra mais profunda no hover */
+    transform: translateY(-2px); /* levanta o botão ligeiramente */
+}
+
+button:nth-child(16) {
+    background-color: #f76c6c; /* vermelho suave para o botão de igual */
+    box-shadow: 0px 8px #d15555; /* sombra mais escura para o botão de igual */
+}
+
+button:nth-child(16):hover {
+    background-color: #d15555; /* vermelho mais escuro no hover */
+    box-shadow: 0px 10px #b04444; /* sombra mais profunda no hover */
+    transform: translateY(-2px); /* levanta o botão ligeiramente */
+}
